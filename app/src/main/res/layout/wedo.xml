@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/curve_part"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="@color/black">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="123dp"
+            android:layout_height="116dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="4dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilecheck"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_below="@id/profile_image"
+            android:layout_alignEnd="@id/profile_image"
+            android:layout_marginTop="-30dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/gender"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignStart="@id/fullname"
+            android:layout_alignBottom="@id/fullname"
+            android:layout_marginStart="-53dp"
+            android:layout_marginBottom="0dp"
+            />
+
+        <TextView
+            android:id="@+id/fullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_image"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:text="@string/loading"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/fullname"
+            android:layout_alignBottom="@id/fullname"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="-85dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/fullname"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fullname"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="@string/loading"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:orientation="horizontal"
+            android:id="@+id/ll">
+
+            <Button
+                android:id="@+id/birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                android:drawableTop="@drawable/ic_birthdaycake"
+                android:drawableTint="@color/white"
+                android:text="In 0 Day(s)" />
+
+            <Button
+                android:id="@+id/anniversary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                android:drawableTop="@drawable/ic_wedo"
+                android:text="In 0 Day(s)" />
+
+            <Button
+                android:id="@+id/More"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                android:drawableTop="@drawable/ic_rightarrow"
+                android:drawableTint="@color/white"
+                android:text="More" />
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/white"
+            android:layout_below="@id/ll"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

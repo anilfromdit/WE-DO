@@ -1,0 +1,64 @@
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    android:id="@+id/rrr"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/information"
+        android:layout_margin="15dp"
+        android:id="@+id/infoBtn"
+        />
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="15dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/chat"
+        android:id="@+id/chatBtn"
+        />
+
+
+
+   <ImageView
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/testing"
+        android:id="@+id/img"
+        />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:text="Welcome To Beta Version"
+    android:textSize="20sp"
+    android:layout_below="@id/img"
+    android:textColor="@color/white"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:gravity="center"
+    android:id="@+id/txt"
+
+    />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:drawableRight="@drawable/ic_rightarrow"
+        android:background="@drawable/round_text_view"
+        android:drawableTint="@color/white"
+        android:backgroundTint="@color/black"
+        android:layout_below="@id/txt"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:id="@+id/feedbackbtn"
+        android:layout_centerHorizontal="true"
+        android:text="Send Feedback"
+
+        />
+
+</RelativeLayout>

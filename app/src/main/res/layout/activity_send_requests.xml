@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Background"
+        android:orientation="horizontal"
+        tools:context=".SendRequests">
+
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/round_edit_text"
+            android:backgroundTint="@color/grey"
+            android:hint="@string/enter_username"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/searchbtn"
+            android:layout_width="69dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="328dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/grey"
+            android:drawableTop="@android:drawable/ic_menu_search"
+            app:layout_constraintEnd_toEndOf="@+id/search_bar"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+
+            android:id="@+id/view3"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_marginTop="67dp"
+            android:background="@drawable/mborder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_ver"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="83dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="291dp" />
+
+        <TextView
+            android:id="@+id/user_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_image"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="31dp"
+            android:layout_toEndOf="@+id/user_image"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/user_age"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/user_name"
+            android:layout_alignBottom="@+id/user_name"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="-54dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/user_name"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/gender"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@id/user_age"
+            android:layout_marginStart="61dp"
+            android:layout_marginEnd="-30dp"
+            android:contentDescription="@string/gender"
+            android:layout_toEndOf="@+id/user_age"
+            />
+        <TextView
+            android:id="@+id/user_bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_name"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="24dp"
+            android:layout_toEndOf="@id/user_image"
+            android:textColor="@color/white"
+            android:maxWidth="200dp"
+            android:textSize="18sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/rqst_btn"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/user_age"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/nouser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/blue"
+        android:textSize="25sp" />
+
+
+</LinearLayout>

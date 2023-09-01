@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailedProfle"
+    android:background="@color/Background"
+    android:padding="05dp"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/logo"
+            app:civ_border_width="4dp"
+            app:civ_border_color="@color/white"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/llh"
+            android:layout_below="@id/dp"
+            android:background="@color/Background">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/report"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:id="@+id/reportBtn"
+
+                android:contentDescription="TODO" />
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:src="@drawable/link"
+                android:layout_margin="10dp"
+                android:id="@+id/linkBtn"
+
+                />
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_dissolve"
+                android:layout_margin="10dp"
+                android:id="@+id/dissolve_btn"
+
+                />
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bio"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="60dp"
+            android:background="@drawable/round_edit_text"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/grey"
+            android:padding="10dp"
+            android:text="@string/loading"
+            android:textColor="@color/black"
+            android:layout_below="@id/llh"
+            android:textSize="20sp" />
+
+        <TextView
+        android:id="@+id/nameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginStart="10dp"
+        android:text="@string/name"
+            android:layout_below="@id/bio"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/round_edit_text"
+        android:padding="10dp"
+        android:text="@string/loading"
+        android:layout_below="@id/nameTv"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/emailTv"
+        android:layout_below="@id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/email"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/round_edit_text"
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/loading"
+        android:layout_below="@id/emailTv"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/usernameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/username"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_below="@id/email"
+        />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/round_edit_text"
+        android:padding="10dp"
+        android:text="@string/loading"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/usernameTv"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/dobTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/date_of_birth"
+        android:layout_below="@id/username"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+    android:id="@+id/dob"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/round_edit_text"
+    android:padding="5dp"
+        android:layout_below="@id/dobTv"
+    android:text="@string/loading"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+    android:textColor="@color/white"
+    android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/genderTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/gender2"
+        android:layout_below="@id/dob"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/round_edit_text"
+        android:padding="5dp"
+        android:text="@string/loading"
+        android:textColor="@color/white"
+        android:layout_below="@id/genderTv"
+        android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/AnniversaryTv"
+            android:layout_below="@id/gender"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/anniversary"
+            />
+
+        <TextView
+            android:id="@+id/Anniversary"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/round_edit_text"
+            android:padding="5dp"
+            android:text="@string/loading"
+            android:textColor="@color/white"
+            android:layout_below="@id/AnniversaryTv"
+            android:textSize="18sp" />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/Anniversary"
+    android:layout_margin="10dp"
+    android:padding="5dp"
+    android:text="@string/update"
+    android:textStyle="bold"
+    android:id="@+id/updateBtn"
+    />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView"
+            android:name="com.bumptech.glide.manager.SupportRequestManagerFragment"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_marginTop="80dp"
+            />
+
+
+    </RelativeLayout>
+
+</ScrollView>

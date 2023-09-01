@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportUser"
+    android:background="@color/Background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/round_edit_text"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/username"
+        android:text="Loading..."
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:layout_below="@id/username"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/black"
+        android:layout_margin="10dp"
+        android:id="@+id/report"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:hint="Describe Your Issue"
+        android:textColorHint="@color/grey"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/report"
+        android:id="@+id/reportBtn"
+        android:text="Send"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>
